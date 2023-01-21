@@ -24,13 +24,8 @@
                 <a href="#"><img src="<?php echo get_theme_mod('triTheme_logo', '/assets/images/dark-logo.png') ?>" alt=""></a>
             </div>
             <div class="col-md-9 d-flex align-items-center justify-content-end">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Service</a></li>
-                    </ul>
+                <nav id="nav">
+                    <?php wp_nav_menu(array('theme_location' => 'main_menu', 'menu_id' => 'nav')); ?>
                 </nav>
             </div>
         </div>
