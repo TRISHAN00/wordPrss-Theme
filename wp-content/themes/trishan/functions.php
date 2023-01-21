@@ -20,3 +20,23 @@ function add_theme_css_jquery_files() {
     wp_enqueue_script( 'bootstrap', get_template_directory_uri(). '/assets/lib/bootstrap/bootstrap.min.js' , array(), '4.0.0', true );
 }
 add_action('wp_enqueue_scripts', 'add_theme_css_jquery_files');
+
+// Theme Functions Customize 
+function triTheme_customize_register($wp_customize) {
+    $wp_customize->add_section('triTheme_header_area', array(
+        'title' => __('Header Area', 'trishan'),
+        'description' => 'If you update your header section please do here.',
+    ));
+
+    $wp_customize->add_setting('triTheme_logo', array(
+        'default' => get_bloginfo('template_directory', 'assets/images/dark-logo.png'),
+    ));
+
+    $wp_customize->add_control(new Wp_Customize_Image_Control($wp_customize, 'triTheme_logo', array(
+        'label' => 'Logo Upload',
+        'setting' => 'triTheme_logo',
+        'description' => 'if your interested to change and update your logo please do here',
+        'section' => 'triTheme_header_area',
+    )));
+}
+add_action('customize_register', 'triTheme_customize_register');

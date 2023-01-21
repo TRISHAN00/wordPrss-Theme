@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark-logo.png" alt=""></a>
+                <a href="#"><img src="<?php echo get_theme_mod('triTheme_logo', '/assets/images/dark-logo.png') ?>" alt=""></a>
             </div>
             <div class="col-md-9"></div>
         </div>
