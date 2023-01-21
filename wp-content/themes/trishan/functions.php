@@ -30,6 +30,7 @@ add_action('wp_enqueue_scripts', 'triTheme_google_fonts');
 
 // Theme Functions Customize 
 function triTheme_customize_register($wp_customize) {
+    // Header Area
     $wp_customize->add_section('triTheme_header_area', array(
         'title' => __('Header Area', 'trishan'),
         'description' => 'If you update your header section please do here.',
@@ -45,6 +46,9 @@ function triTheme_customize_register($wp_customize) {
         'description' => 'if your interested to change and update your logo please do here',
         'section' => 'triTheme_header_area',
     )));
+
+    // Menu Position Function
+    
 }
 add_action('customize_register', 'triTheme_customize_register');
 
