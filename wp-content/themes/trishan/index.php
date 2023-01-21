@@ -23,7 +23,16 @@
             <div class="col-md-3">
                 <a href="#"><img src="<?php echo get_theme_mod('triTheme_logo', '/assets/images/dark-logo.png') ?>" alt=""></a>
             </div>
-            <div class="col-md-9"></div>
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </header>

@@ -21,6 +21,13 @@ function add_theme_css_jquery_files() {
 }
 add_action('wp_enqueue_scripts', 'add_theme_css_jquery_files');
 
+
+// Google Fonts
+function triTheme_google_fonts() {
+    wp_enqueue_style('triTheme_google_fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap', false);
+}
+add_action('wp_enqueue_scripts', 'triTheme_google_fonts');
+
 // Theme Functions Customize 
 function triTheme_customize_register($wp_customize) {
     $wp_customize->add_section('triTheme_header_area', array(

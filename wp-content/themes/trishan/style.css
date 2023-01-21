@@ -12,9 +12,31 @@ Requires at least: 5.3
 Requires PHP: 5.6
 ============================*/
 
-body {
-    background-color: red;
-}
 img {
     max-width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+nav ul li a {
+    color: #000;
+    transition: .3s;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    font-weight: 700;
 }
